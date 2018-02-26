@@ -6,7 +6,7 @@ exports.handler = function (event, context, callback) {
 		Item: { 'ID': '001', 'Name': 'Hiru' }
 	}, function (err, data) {
 		if (err) {
-			console.log('error ', error);
+			console.log('error ', err);
 		} else {
 			console.log('success ', data);
 		}
