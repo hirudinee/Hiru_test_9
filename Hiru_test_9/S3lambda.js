@@ -3,10 +3,10 @@ const s3 = new AWS.S3();
 exports.handler = function (event, context, callback) {
 	s3.putObject({
 		"Body": "sample",
-		"Bucket": "test.demo.hiru",
+		"Bucket": "test.sample.ohio",
 		"Key": "thisisatest",
 		"ServerSideEncryption": "AES256",
-		"Tagging": "key1=val1",
+		"Tagging": "key1==val1",
 		"Metadata": {
 			"meta1": "val1"
 		}
